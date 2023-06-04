@@ -1,0 +1,467 @@
+.MainPage_Banner{
+  position: relative;
+  margin: 0 auto;
+  padding:25px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  overflow: clip;
+  background-color: cornflowerblue;
+  background-image: linear-gradient(185deg, #2d6cca, #828cff);
+  background-attachment: fixed;
+}
+
+.MainPage_banner_night{
+  background-image: linear-gradient(185deg, #00060e, #1b1e3d);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  transition: 1s opacity;
+  position: fixed;
+}
+
+.Banner_title{
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 600;
+}
+.Banner_text{
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  line-height: 1.4;
+  margin-top:1.6rem;
+}
+.MainPage_Background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+  object-fit: cover;
+  object-position: center;
+  animation: 60s slow_zoom_in forwards linear;
+  z-index: -1;
+  /*filter:blur(5px);*/
+}
+@keyframes slow_zoom_in{
+  0% {scale: 1;}
+  100% {scale: 1.2;}
+}
+.Banner_search{
+  width: 100%;
+  height: 50px;
+  border-bottom: solid 4px white;
+  border-radius: 0 0 0.3rem 1.6rem;
+  font-size: clamp(1rem, 4vw, 1.6rem);
+  padding: 1rem;
+  background-color: rgb(255 255 255 / 0%);
+  outline: none;
+  margin-bottom: 220px;
+}
+.Banner_search::placeholder{
+  color: white;
+  opacity: 0.8;
+}
+.arrowAnimatedOnInput{
+  position: absolute;
+  left: 285px;
+  top: -8px;
+  transform: rotateZ(65deg) scaleY(-1);
+  opacity: 0;
+  transition: 1s;
+  pointer-events: none;
+}
+
+.Banner_search:placeholder-shown + .arrowAnimatedOnInput{
+  transition: 1s;
+  opacity: 1;
+  animation: 0.5s 1s jump linear infinite alternate;
+}
+@keyframes jump{
+  0%{translate: 0px 0;opacity: 1;}
+  100%{translate: -10px 0;opacity: 1;}
+}
+
+.Banner_search_list{
+  margin-top: 55px;
+  width: 100%;
+  position: absolute;
+  border-radius: 0.6rem;
+  font-size: clamp(0.8rem, 4vw, 1.4rem);
+  text-align: left;
+  top: 0;
+}
+.Banner_search_list li{
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+  border-bottom: solid 1px white;
+}
+.Banner_search_list li a{
+  display: block;
+}
+.Banner_search_list li p{
+  transition: 0.5s;
+  position: relative;
+  display: block;
+}
+.Banner_search_list li p img{
+  position: absolute;
+  top:0;
+  left: 0;
+  transform: translateX(-45px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.Banner_search_list li a:focus-visible{
+  outline: none;
+}
+.Banner_search_list li a:hover p, 
+.Banner_search_list li a:focus-visible p{
+  transform: translateX(10px);
+}
+.Banner_search_list li a:hover p img,
+.Banner_search_list li a:focus-visible p img{
+  transform: translateX(-30px);
+  opacity: 1;
+}
+
+.backLink{
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.backLink img{
+  width: 40px;
+  height: auto;
+  display: inline-block;
+  transform: rotateZ(273deg);
+  margin-right: 15px;
+  margin-top: -5px;
+  animation: 0.5s arrowMoveLeft linear infinite alternate;
+}
+@keyframes arrowMoveLeft{
+  0%{translate: 5px 0; transform: rotateZ(273deg);}
+  100%{translate: -5px 0; transform: rotateZ(250deg);}
+}
+
+.cityTitle{
+  font-size: clamp(2rem, 5vw, 4.4rem);
+  font-weight: 600;
+}
+.cityTimeZone{
+  font-size:clamp(0.6rem, 1vw, 1rem);
+  opacity: 0.5;
+}
+.weatherBanner{
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+.weatherInfo-small{
+  word-break: break-word;
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  margin-bottom: 10px;
+}
+.weatherCardInfo .weatherInfo-small{
+  font-size: 1.2rem;
+}
+.weatherInfo-medium{
+  font-size: clamp(1.4rem, 3vw, 2.6rem);
+}
+.weatherInfo-big{
+  font-size: clamp(3rem, 6.5vw, 7rem);
+  font-weight: 600;
+}
+
+.weatherIconsDiv{
+  max-width: 100%;
+  width: 540px;
+  aspect-ratio: 1/1;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  pointer-events: none;
+  animation: 1.5s opacity forwards;
+}
+@keyframes opacity{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+
+.sunnyRadialGradient{
+  pointer-events: none;
+  width: 300%;
+  height: auto;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(white, transparent 60%);
+  opacity: 0.5;
+}
+.moonRadialGradient{
+  pointer-events: none;
+  width: 200%;
+  height: auto;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(white, transparent 60%);
+  opacity: 0.05;
+}
+
+.weatherIcon{
+  max-width: 100%;
+  width: 540px;
+  height: auto;
+  position: absolute;
+}
+
+.weatherIcon-moon{
+  z-index: 1;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: auto;
+  filter:drop-shadow(0 0 50px white);
+}
+
+.weatherIcon-sunny{
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  animation: 240s sunRotate linear infinite;
+}
+@keyframes sunRotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+.cloudMoving{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 6;
+  width:540px;
+  max-width: 100%;
+  height:auto;
+  aspect-ratio: 1/1;
+  animation: 120s divMove linear infinite alternate;
+}
+@keyframes divMove{
+  0%{translate: 20%;}
+  100%{translate: -20%;}
+}
+
+.weatherIcon-cloud{
+  z-index: 6;
+  top: 17%;
+  left: 0px;
+  right: 0;
+  opacity: 0.8;
+  animation: 120s cloudMove linear infinite alternate;
+}
+@keyframes cloudMove{
+  0%{scale: 0.9 1;}
+  100%{scale: 1 0.9;}
+}
+
+table.weatherTable{
+  max-width: 100%;
+  width: 450px;
+}
+
+table.weatherTable td{
+  font-weight: 400;
+  padding-top: 7px;
+}
+table.weatherTable tr+tr{
+  border-top: solid 1px rgb(255 255 255 / 50%);
+}
+
+table.weatherTable td:nth-child(2){
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  padding-left:5px;
+  padding-right:5px;
+}
+table.weatherTable td:last-child{
+  padding-right:0;
+  font-weight: 600;
+  text-align: right;
+}
+
+.NESW-arrow{
+  max-width: 100%;
+  width:24px;
+  display: inline-block;
+  margin-top: -5px;
+}
+
+@media (max-width:767px){
+  .weatherIconsDiv{
+    width:380px;
+  }
+}
+
+.weatherBannerOtherHoursInfo{
+  -webkit-overflow-scrolling: touch;
+  margin: 15px 0;
+}
+.showCardsOnActive[data-active-list=false] .weatherBannerOtherHoursInfo{
+  display: none;
+}
+.weatherBannerOtherHoursInfo::-webkit-scrollbar {
+  height: 0.6rem;
+}
+.weatherBannerOtherHoursInfo::-webkit-scrollbar-track {
+  background-color:rgba(255,255,255,0.3)
+}
+.weatherBannerOtherHoursInfo::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 10px;
+  border: 0px;
+  outline: 0px;
+  cursor: pointer;
+}
+.weatherBannerOtherHoursInfo::-webkit-scrollbar-thumb:hover{
+  background-color:White;
+}
+.grid-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(230px), 1fr));
+  gap: 15px;
+}
+
+.weatherCard{
+  opacity:0;
+  background-color: hsla(0,0%,100%,.1);
+  border-radius: 15px;
+  animation: 1s cardSlide forwards;
+  overflow: hidden;
+}
+@keyframes cardSlide{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+
+.weatherCard *{
+  animation: none !important;
+}
+
+.weatherCard:last-child{
+  margin-right:0;
+}
+.weatherCardInfo{
+  position: relative;
+  padding: 15px;
+  height: 100%;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 560px;
+}
+.weatherCardInfo table.weatherTable td:nth-child(2) {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+.weatherCardTemperature{
+  font-size: 2rem;
+  margin-bottom:15px;
+  font-weight: 700;
+}
+
+.weatherCardHour{
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.weatherCardImage{
+  max-width: 100%;
+  position: relative;
+  height: auto;
+  width: 70%;
+  aspect-ratio: 1/1;
+  margin: 20px auto;
+}
+.weatherCardImage .sunnyRadialGradient{
+  width:200% !important;
+}
+.showCardsOnActive{
+  border-radius: 0.6rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.showCardsOnActive:hover .weatherCardsDayName,
+.showCardsOnActive[data-active-list=true] .weatherCardsDayName{
+  background-color: rgba(255,255,255,0.3);
+}
+.showCardsOnActive[data-active-list=true]{
+  outline: solid 1px rgb(255 255 255 / 30%);
+  outline-offset: 10px;
+}
+.showCardsOnActive[data-active-list=true]:hover{
+  outline: solid 1px rgb(255 255 255 / 70%);
+  outline-offset: 10px;
+}
+.showCardsOnActive[data-active-list=true] .weatherBannerOtherHoursInfo{
+  display: block !important;
+}
+.weatherCardsDayName{
+  font-size: clamp(1.4rem, 3vw, 2.6rem);
+  font-weight: 600;
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 10px;
+  transition: 0.6s;
+}
+
+.weatherCardInfo .NESW-arrow{
+  width:16px;
+}
+
+.weatherTableIcon{
+  width:30px;
+  height:auto;
+  filter: grayscale(1) brightness(2);
+  position: relative;
+  top: -3px;
+}
+
+.weatherCardInfo table.weatherTable td:first-child{
+  width:30px;
+}
+
+.weatherCard .weatherIcon-fog{
+  filter: blur(4px);
+}
+
+@media (max-width: 1536px){
+  .grid-cards{
+    grid-template-columns: repeat(auto-fill, minmax(max(130px), 1fr));
+  }
+  .weatherCardImage{
+    width: 100%;
+  }
+  .weatherCardInfo{
+    padding:10px;
+  }
+  .weatherCardTemperature{
+    font-size: 1.4rem;
+  }
+  .weatherCardInfo table.weatherTable td:nth-child(2){
+    display: none;
+  }
+  .weatherCardInfo .weatherInfo-small{
+    font-size: 1rem;
+  }
+  .weatherCardInfo table.weatherTable td:last-child{
+    padding-left:5px;
+  }
+}

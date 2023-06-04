@@ -1,0 +1,300 @@
+[{
+"id": 1,
+"name": "Brusy",
+"coordinates": {
+		"latitude": 53.8859,
+		"longitude": 17.7186
+	}
+},{
+"id": 2,
+"name": "Bytów",
+"coordinates": {
+		"latitude": 54.1695,
+		"longitude": 17.4911
+	}
+},{
+"id": 3,
+"name": "Chojnice",
+"coordinates": {
+		"latitude": 53.6939,
+		"longitude": 17.5563
+	}
+},{
+"id": 4,
+"name": "Czarna Woda",
+"coordinates": {
+		"latitude": 53.8442,
+		"longitude": 18.0994
+	}
+},{
+"id": 5,
+"name": "Czarne",
+"coordinates": {
+		"latitude": 53.6843,
+		"longitude": 16.9380
+	}
+},{
+"id": 6,
+"name": "Czersk",
+"coordinates": {
+		"latitude": 53.7951,
+		"longitude": 17.9766
+	}
+},{
+"id": 7,
+"name": "Człuchów",
+"coordinates": {
+		"latitude": 53.6674,
+		"longitude": 17.3587
+	}
+},{
+"id": 8,
+"name": "Debrzno",
+"coordinates": {
+		"latitude": 53.5376,
+		"longitude": 17.2358
+	}
+},{
+"id": 9,
+"name": "Dzierzgoń",
+"coordinates": {
+		"latitude": 53.9216,
+		"longitude": 19.3476
+	}
+},{
+"id": 10,
+"name": "Gdańsk",
+"coordinates": {
+		"latitude": 54.3493,
+		"longitude": 18.6426
+	}
+},{
+"id": 11,
+"name": "Gdynia",
+"coordinates": {
+		"latitude": 54.5191,
+		"longitude": 18.5297
+	}
+},{
+"id": 12,
+"name": "Gniew",
+"coordinates": {
+		"latitude": 53.8351,
+		"longitude": 18.8220
+	}
+},{
+"id": 13,
+"name": "Hel",
+"coordinates": {
+		"latitude": 54.6430,
+		"longitude": 18.7741
+	}
+},{
+"id": 14,
+"name": "Jastarnia",
+"coordinates": {
+		"latitude": 54.7034,
+		"longitude": 18.6680
+	}
+},{
+"id": 15,
+"name": "Kartuzy",
+"coordinates": {
+		"latitude": 54.3343,
+		"longitude": 18.1966
+	}
+},{
+"id": 16,
+"name": "Kępice",
+"coordinates": {
+		"latitude": 54.2401,
+		"longitude": 16.8896
+	}
+},{
+"id": 17,
+"name": "Kościerzyna",
+"coordinates": {
+		"latitude": 54.1217,
+		"longitude": 17.9808
+	}
+},{
+"id": 18,
+"name": "Krynica Morska",
+"coordinates": {
+		"latitude": 54.3840,
+		"longitude": 19.4381
+	}
+},{
+"id": 19,
+"name": "Kwidzyn",
+"coordinates": {
+		"latitude": 53.7275,
+		"longitude": 18.9314
+	}
+},{
+	"id": 20,
+	"name": "Lębork",
+	"coordinates": {
+		"latitude": 54.5350,
+		"longitude": 17.7501
+	}
+},{
+	"id": 21,
+	"name": "Łeba",
+	"coordinates": {
+		"latitude": 54.7582,
+		"longitude": 17.5523
+	}
+},{
+	"id": 22,
+	"name": "Malbork",
+	"coordinates": {
+		"latitude": 54.0329,
+		"longitude": 19.0352
+	}
+},{
+	"id": 23,
+	"name": "Miastko",
+	"coordinates": {
+		"latitude": 54.0023,
+		"longitude": 16.9742
+	}
+},{
+	"id": 24,
+	"name": "Nowy Dwór Gdański",
+	"coordinates": {
+		"latitude": 54.2100,
+		"longitude": 19.1171
+	}
+},{
+	"id": 25,
+	"name": "Nowy Staw",
+	"coordinates": {
+		"latitude": 54.1344,
+		"longitude": 19.0090
+	}
+},{
+	"id": 26,
+	"name": "Pelplin",
+	"coordinates": {
+		"latitude": 53.9259,
+		"longitude": 18.6987
+	}
+},{
+	"id": 27,
+	"name": "Prabuty",
+	"coordinates": {
+		"latitude": 53.7538,
+		"longitude": 19.2033
+	}
+},{
+	"id": 28,
+	"name": "Pruszcz Gdański",
+	"coordinates": {
+		"latitude": 54.2582,
+		"longitude": 18.6367
+	}
+},{
+	"id": 29,
+	"name": "Puck",
+	"coordinates": {
+		"latitude": 54.7162,
+		"longitude": 18.4065
+	}
+},{
+	"id": 30,
+	"name": "Reda",
+	"coordinates": {
+		"latitude": 54.6135,
+		"longitude": 18.3437
+	}
+},{
+	"id": 31,
+	"name": "Rumia",
+	"coordinates": {
+		"latitude": 54.5685,
+		"longitude": 18.3879
+	}
+},{
+	"id": 32,
+	"name": "Skarszewy",
+	"coordinates": {
+		"latitude": 54.0669,
+		"longitude": 18.4455
+	}
+},{
+	"id": 33,
+	"name": "Skórcz",
+	"coordinates": {
+		"latitude": 53.7931,
+		"longitude": 18.5207
+	}
+},{
+	"id": 34,
+	"name": "Słupsk",
+	"coordinates": {
+		"latitude": 54.4633,
+		"longitude": 17.0343
+	}
+},{
+	"id": 35,
+	"name": "Sopot",
+	"coordinates": {
+		"latitude": 54.4401,
+		"longitude": 18.5603
+	}
+},{
+	"id": 36,
+	"name": "Starogard Gdański",
+	"coordinates": {
+		"latitude": 53.9689,
+		"longitude": 18.5219
+	}
+},{
+	"id": 37,
+	"name": "Sztum",
+	"coordinates": {
+		"latitude": 53.9222,
+		"longitude": 19.0311
+	}
+}
+,{
+	"id": 38,
+	"name": "Tczew",
+	"coordinates": {
+		"latitude": 54.0909, 
+		"longitude": 18.7783
+	}
+}
+,{
+	"id": 39,
+	"name": "Ustka",
+	"coordinates": {
+		"latitude": 54.5793,
+		"longitude": 16.8608
+	}
+}
+,{
+	"id": 40,
+	"name": "Wejherowo",
+	"coordinates": {
+		"latitude": 54.6001,
+		"longitude": 18.2336
+	}
+}
+,{
+	"id": 41,
+	"name": "Władysławowo",
+	"coordinates": {
+		"latitude": 54.7893,
+		"longitude": 18.3984
+	}
+}
+,{
+	"id": 42,
+	"name": "Żukowo",
+	"coordinates": {
+		"latitude": 54.3432,
+		"longitude": 18.3627
+	}
+}]
