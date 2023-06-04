@@ -6,7 +6,7 @@ Na podstawie tego pliku w wyszukiwarce wpisujesz nazwę danego miasta. Po klikni
 Jeżeli po godzinie 0:00 jesteś pierwszą osobą odwiedzającą dane miasto, Next.js pobiera nowe dane z API wraz z generowanie nowej strony dla danego miasta.
 Inni użytkownicy którzy wejdą tego samego dnia na tą samą stronę miasta nie wymuszają kolejnego zapytania na API oraz strona wyświetla się dla nich prawię natychmiastowo.
 
-## [EN] Aplication Description
+## [EN] Application Description
 
 This is a small application that has a JSON file with data about 42 cities in the pomerania area, such as the 'latitude' and 'longitude' coordinates on map. Based on this file, you can enter the name of a city in the site search bar. Upon clicking on city name, it redirects to a subpage with weather data for the city from the current hour up to a week ahead.
 
