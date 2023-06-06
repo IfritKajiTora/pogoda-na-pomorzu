@@ -81,6 +81,10 @@ export default function Home() {
             <h1 className="Banner_title">POGODA NA POMORZU</h1>
             <p className='Banner_text'>Mała aplikacja pogodowa wykorzystująca API open-meteo z użyciem &quot;Next: revalidate&quot;, pobierająca nowe dane z API raz dziennie o godzinie 0:00 czasu Polskiego.</p>
 
+            <Link href={`./miasta`} prefetch={false} className='miastaLink'>
+              <p>Zobacz wszystkie miasta</p>
+            </Link>
+
             <div className='relative max-w-[600px] mt-[50px] mx-auto lg:mx-0'>
               <input className='Banner_search' autoFocus type="text" placeholder='Wpisz nazwę miasta' value={search} onChange={(e) => inputChange(e)} />
               <Image className='arrowAnimatedOnInput' src='/arrow-wind.png' width={40} height={40} alt='arrow'/>
@@ -91,7 +95,7 @@ export default function Home() {
                       <>
                         {citiesList.map((city) => (
                           <li key={city.id}>
-                            <Link href={`./miasto/${city.slug}`}>
+                            <Link href={`./miasta/${city.slug}`} prefetch={false}>
                               <p><Image src='/arrow-small.png' width={24} height={22} alt='arrow'/>{city.name}</p>
                             </Link>
                           </li>

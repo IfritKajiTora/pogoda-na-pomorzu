@@ -10,7 +10,7 @@ export default function WeatherTable(props: WeatherTableInfo) {
         <tr>
           <td><Image className='weatherTableIcon' src='/weather-icons/cloudy.png' width={30} height={30} alt='cloud icon'/></td>
           <td>Zachmurzenie:</td>
-          <td>{props.cloudCover == 0 ? 'Czyste Niebo' : `${props.cloudCover}${props.cloudCoverUnits}`}</td>
+          <td>{props.cloudCover == 0 ? 'Brak' : `${props.cloudCover}${props.cloudCoverUnits}`}</td>
         </tr>
 
 
