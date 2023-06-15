@@ -20,7 +20,6 @@ export default function CaseWeatherImage(props: CaseWeatherImage) {
 
   return (
     <>
-    
       {props.todayHours < hourSunriseToNumber || props.todayHours >= hourSunsetToNumber
       ? <>
         <div className='moonRadialGradient'></div>
@@ -105,7 +104,7 @@ export default function CaseWeatherImage(props: CaseWeatherImage) {
           />
         </div>
       </>
-      : props.rain >= 5
+      : props.rain >= 2.5
       ? <>
         <div className="cloudMoving">
           <Image src='/weather-icons/rain.png' 
@@ -116,7 +115,7 @@ export default function CaseWeatherImage(props: CaseWeatherImage) {
           />
         </div>
       </>
-      : props.rain >= 1
+      : props.rain >= 0.1
       ? <>
       <div className="cloudMoving">
         <Image src='/weather-icons/rain.png' 
@@ -152,7 +151,7 @@ export default function CaseWeatherImage(props: CaseWeatherImage) {
           />
         </div>
       </>
-      : props.snow >= 1
+      : props.snow >= 0.1
       ? <>
       <div className="cloudMoving">
         <Image src='/weather-icons/snow-small.png' 

@@ -62,15 +62,17 @@ export default async function City({params}: {params: {slug:string}}) {
   
   const nightBackgroundOpacity = backgroundNightOpacity(hourNow);
 
+  
   return (
     <>    
     <section className='MainPage_Banner'>
       <div className='MainPage_banner_night' style={{opacity: `${nightBackgroundOpacity}`}}></div>
-
       <div className="container m-auto py-[50px] relative">
+
         <BackLink/>
         <WeatherBanner fetchedCityData={fetchedCityData} cityName={currentCity.name}/>
         <DaysCards fetchedCityData={fetchedCityData} numberOfDays={8} />
+
       </div>
     </section>
     </>

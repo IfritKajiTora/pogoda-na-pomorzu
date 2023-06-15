@@ -5,9 +5,9 @@ export default function backgroundNightOpacity(hour: number | null){
   } else {
     switch(hour){
       case 3: case 22: opacity = 0.9; break;
-      case 4: case 21: opacity = 0.8; break;
-      case 5: case 20: opacity = 0.6; break;
-      case 6: case 19: opacity = 0.4; break;
+      case 4: case 21: opacity = 0.7; break;
+      case 5: case 20: opacity = 0.4; break;
+      case 6: case 19: opacity = 0.3; break;
       case 7: case 18: opacity = 0.2; break;
       default: opacity = 0;
     }

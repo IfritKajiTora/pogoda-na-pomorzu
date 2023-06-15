@@ -143,7 +143,7 @@
   z-index: 3;
   top:25%;
   right:0;
-  opacity: 0.3;
+  opacity: 0.5;
   scale: 0.6;
   animation: 2s small-rain linear infinite;
 }
@@ -155,7 +155,7 @@
   z-index: 3;
   top:20%;
   right:0;
-  opacity: 0.5;
+  opacity: 0.65;
   scale: 0.8;
   animation: 1.5s medium-rain linear infinite;
 }

@@ -35,6 +35,7 @@ export default function SortingCities() {
     changeSortion(sortedArray);
   }, [sortOption]);
 
+
   return (
     <>
       <label htmlFor='citiesSortingSelector' className='Banner_text'>
@@ -47,11 +48,11 @@ export default function SortingCities() {
         <option value='reverseLength'>nazw długie-krótkie</option>
       </select>
 
-      <div className='outlineWhiteOpacity block sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <div className='outlineWhiteOpacity city-list-on-xxs grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2'>
         {sortedCities.map((city: typeCities) => {
           const slug = city.name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ł/g, 'l').replace(/ /g, '-');
           return (
-            <Link key={city.id} prefetch={false} className='cityNameLink mb-4 sm:mb-0' href={`./miasta/${slug}`}>
+            <Link key={city.id} prefetch={false} className='cityNameLink' href={`./miasta/${slug}`}>
               {city.name}
             </Link>
           );

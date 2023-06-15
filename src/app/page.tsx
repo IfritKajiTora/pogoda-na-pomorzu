@@ -7,6 +7,7 @@ import cities from '@/json/cities.json'
 import typeCities from '@/types/cities'
 import Link from 'next/link';
 import Image from 'next/image';
+import SunOrMoonBanner from '@/components/sunOrMoonBanner'
 import backgroundNightOpacity from '@/functions/backgroundNightOpacity'
 
 
@@ -55,26 +56,7 @@ export default function Home() {
         <div className='relative z-10 lg:grid lg:grid-cols-5 gap-4'>
 
           <div className='lg:col-span-2 order-1 lg:order-2 self-center'>
-            <div className='weatherIconsDiv'>
-              {currentHour == null ? null :
-                (currentHour > 21 || currentHour < 4) ?
-                <>
-                  <div className='moonRadialGradient'></div>
-                  <Image priority src='/weather-icons/moon.png' height={500} width={500} alt='Ikona pogody - Księżyc' className='weatherIcon weatherIcon-moon' />
-                  <div className="cloudMoving">
-                    <Image src='/weather-icons/cloudy.png' height={540} width={540} alt='cloud icon - weather cloudy' className='weatherIcon weatherIcon-cloud' />
-                  </div>
-                </>
-                : <>            
-                  <div className='sunnyRadialGradient'></div>
-                  <Image priority src='/weather-icons/sunny.png' height={540} width={540} alt='sun icon - weather sunny' className='weatherIcon weatherIcon-sunny' />
-                  <div className="cloudMoving">
-                    <Image src='/weather-icons/cloudy.png' height={540} width={540} alt='cloud icon - weather cloudy' className='weatherIcon weatherIcon-cloud' />
-                  </div>
-                </>
-              }
-
-            </div>
+            <SunOrMoonBanner currentHour={currentHour}/>
           </div>
 
           <div className='lg:col-span-3 relative z-50 order-2 lg:order-1 text-center lg:text-left pt-[30px] lg:pt-0 self-center lg:mt-[220px]'>
