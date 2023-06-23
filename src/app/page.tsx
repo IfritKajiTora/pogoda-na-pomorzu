@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import SunOrMoonBanner from '@/components/sunOrMoonBanner'
 import backgroundNightOpacity from '@/functions/backgroundNightOpacity'
+import useDebounce from '@/functions/useDebounce';
 
 
 export default function Home() {
@@ -29,6 +30,8 @@ export default function Home() {
     updateSearch(value);
   }
 
+  const debouncedSearch = useDebounce(search, 300);
+
   useEffect(() => {
     let matchedCities: typeCities[] = [];
     if (search.length >= 1) {
@@ -45,7 +48,9 @@ export default function Home() {
       }
     }
     updateCitiesList(matchedCities);
-  }, [search]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [debouncedSearch]);
+
 
   return (
     <> 

@@ -352,6 +352,10 @@ table.weatherTable td:last-child{
   animation: none !important;
 }
 
+.weatherInfoCardSmall{
+  margin-top: auto;
+}
+
 .weatherCard:last-child{
   margin-right:0;
 }
@@ -361,6 +365,8 @@ table.weatherTable td:last-child{
   height: 100%;
   content-visibility: auto;
   contain-intrinsic-size: auto 560px;
+  display: flex;
+  flex-direction: column;
 }
 .weatherCardInfo table.weatherTable td:nth-child(2) {
   font-size: clamp(0.8rem, 2vw, 1rem);
